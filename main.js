@@ -1,8 +1,11 @@
 const https = require("https");
 const http = require("http");
 
-const API_KEY = "example_api_key";
-const city_name = "Los Angeles";
+const API_KEY = "example_key";
+var user_city_input = process.argv.slice(2);
+var user_city_complete = user_city_input.join(" ");
+
+const city_name = user_city_complete;
 const country_code = "us";
 
 // Example API call by city name and country code
